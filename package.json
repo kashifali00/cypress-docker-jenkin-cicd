@@ -1,0 +1,21 @@
+{
+  "name": "cypressTest",
+  "version": "1.0.0",
+  "description": "cypressTest",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --record --key 7fa72f7b-1ea0-43cd-a3e7-bb582abdb7ea --reporter mochawesome",
+    "cypress:open": "cypress open",
+    "tsc": "tsc"
+  },
+  "author": "kashifali",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^3.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
+    "typescript": "3.1.5"
+  }
+}

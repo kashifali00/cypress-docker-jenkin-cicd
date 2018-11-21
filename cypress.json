@@ -1,0 +1,14 @@
+{
+  "baseUrl": "https://www.uber.com/in/en/",
+  "pageLoadTimeout": 180000,
+  "defaultCommandTimeout": 5000,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "reports",
+    "reportFilename": "test-report",
+    "reportTitle": "Uber Test Run",
+    "overWrite": true,
+    "saveHtml": true
+  },
+  "projectId": "aokzdf"
+}
