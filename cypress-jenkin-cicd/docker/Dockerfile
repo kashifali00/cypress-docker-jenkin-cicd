@@ -20,3 +20,4 @@ RUN apt-get update && \
 RUN apt-get clean && apt-get update && apt-get install -y \
     nodejs \
     npm
+COPY README.md /root/
