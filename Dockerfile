@@ -22,10 +22,11 @@ RUN apt-get clean && apt-get update && apt-get install -y \
     npm
 COPY cypress-jenkin-cicd /root/
 ADD entrypoint /root/entrypoint
+RUN sed -i -e 's/\r$//' /root/entrypoint
 RUN chmod a+x /root/entrypoint
 
 CMD ["/root/entrypoint"]
 #Label
 MAINTAINER KashifAli <kashif@aurorasolutions.io>
 LABEL Version="0.1.0" \
-      Description="Android SDK and emulator environment"
+      Description="Cypress test automation"
