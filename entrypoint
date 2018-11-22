@@ -1,0 +1,24 @@
+#!/bin/sh
+
+#**********************************************************************************************************
+# Author: KashifAli                                                                                       *
+# Email: kashif@aurorasolution.io                                                                         *
+# File: entrypoint.sh                                                                                     *
+# Purpose: It will perform npm install and npm test to run the cypress test in headless browser mode and  *
+# tests results can be viewed on Cypress' DASHBOARD SERVICE                                               *
+# Date: 22-05-2018                                                                                        *
+#**********************************************************************************************************
+
+
+
+printf '********************************************************\n\n'
+echo   "Going to execute npm install"
+printf '********************************************************\n\n'
+
+npm install
+
+printf '********************************************************\n\n'
+echo   "It's time to run the tests"
+printf '********************************************************\n\n'
+
+npm test
