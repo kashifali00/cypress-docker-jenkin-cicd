@@ -1,6 +1,6 @@
 from ubuntu:18.04
 
-WORKDIR /
+WORKDIR /root
 
 RUN apt-get update && \
   apt-get install -y \
